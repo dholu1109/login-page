@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @font-face {
+            font-family: le;
+            src: url(Futura\ Std\ Medium.ttf);
+        }
+
+        * {
+            font-family: le
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container .box {
+            background-color: black;
+            border: 2px solid white;
+            text-align: center;
+            color: white;
+            width: 450px;
+            height: 500px;
+            position: relative;
+            top: 160px;
+            transition: all 1.5s ease-in;
+            border-radius: 50px;
+            line-height: 100px;
+        }
+
+        .container .box:hover {
+            box-shadow: 20px 15px 150px 8px red;
+        }
+
+        .container .box h1 {
+            font-family: le;
+            padding-top: 20px;
+            letter-spacing: 5px;
+        }
+
+        .container .box input {
+            width: 300px;
+            height: 50px;
+            border-radius: 100px;
+            background-color: grey;
+            border: none;
+        }
+
+        .container .box input::placeholder {
+            color: white;
+            font-weight: 600px;
+        }
+
+        .container .box input[type="email"] {
+            padding-left: 30px;
+            padding-right: 30px;
+            color: white;
+            font-weight: 600px;
+            letter-spacing: 3px;
+        }
+
+        .container .box input[type="password"] {
+            padding-left: 30px;
+            padding-right: 30px;
+            color: white;
+            font-weight: 1000px;
+            letter-spacing: 3px;
+        }
+
+        .container .box button {
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 20px;
+            letter-spacing: 3px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>LOGIN</h1>
+            <input type="email" placeholder="Your email">
+            <br>
+            <input type="password" placeholder="Enter your password">
+            <br>
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+
+</html>
